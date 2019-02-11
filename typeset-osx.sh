@@ -1,8 +1,7 @@
 #!/bin/bash
 /usr/local/bin/pandoc \
 	-f markdown \
-	--latex-engine=/Library/TeX/texbin/pdflatex \
-	--smart \
+	--pdf-engine=/usr/local/bin/pdflatex \
 	--variable documentclass=sig-alternate-05-2015 \
 	--filter table-filter.py \
 	--filter=/usr/local/bin/pandoc-citeproc \

@@ -3,7 +3,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pulvinar quis lo
 
 Donec quis nunc sit amet dui scelerisque imperdiet. Cras gravida elit felis, quis aliquet dolor luctus at. Ut sit amet metus facilisis, finibus ligula eget, scelerisque ante. Nulla facilisi. Aliquam erat volutpat. Nam in sapien sapien. Nullam vehicula risus vitae odio suscipit, id dignissim turpis convallis [@bowman:reasoning].
 
-![This is the caption \label{my_figure}](fly.eps)
+![This is the caption \label{my_figure}](fly.png)
 
 Non-English or Math|Frequency |Comments          
 -------------------|----------|-----------------
