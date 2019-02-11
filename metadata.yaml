@@ -1,0 +1,24 @@
+---
+title:  'It is actually possible to write IEEE papers using Markdown'
+subtitle: 'With pandoc and a very long bash command'
+author:
+  - name: Barry Nisly
+    affilation: Georgia Tech
+    location: CS7641, Spring 2019, Assignment 1
+    email: barry_nisly@gatech.edu
+date: February 1st, 2019
+tags: [nothing, nothingness]
+#keywords:
+#  - one
+#  - two
+#  - three
+numbersections: yes
+lang: en
+babel-lang: english
+abstract: |
+  Supervised Learning: the first assignment for CS7641 Machine Learning.
+header-includes: |
+  \usepackage{booktabs}
+
+...
+

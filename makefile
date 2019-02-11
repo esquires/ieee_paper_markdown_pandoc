@@ -1,7 +1,7 @@
 #FILES = paper.md \
 #		metadata.yaml
-FILES = sig-alternate-sample.md \
-		metadata.yml
+FILES = test3.md \
+		metadata.yaml
 
 PANDOC = /usr/local/bin/pandoc
 OUTPUT = build
@@ -12,7 +12,7 @@ FLAGS = \
 	--pdf-engine=/usr/local/bin/pdflatex \
 	--filter table-filter.py \
 	--filter=/usr/local/bin/pandoc-citeproc \
-	--bibliography=sigproc.bib \
+	--bibliography=bibliography.bib \
 	--csl=bibliography.csl \
 	-s \
 	-F /usr/local/bin/pandoc-crossref
@@ -23,23 +23,18 @@ FLAGS = \
 #		-F /usr/local/bin/pandoc-crossref \
 #		-f markdown
 
-FLAGS_TEX = --bibliography=bibliography.bib \
-		--csl=bibliography.csl \
-		-s \
-		-F /usr/local/bin/pandoc-crossref
+FLAGS_TEX =
+	--bibliography=bibliography.bib \
+	--csl=bibliography.csl \
+	-s \
+	-F /usr/local/bin/pandoc-crossref
 
 FLAGS_PDF = --template=template.latex
 
-all: pdf
+all: *.pdf
 
-pdf: mkdir
-	$(PANDOC) -o $(OUTPUT)/$(PDF) $(FLAGS) $(FLAGS_PDF) $(FILES)
-
-test: mkdir
-	$(PANDOC) -o $(OUTPUT)/test.pdf $(FLAGS) $(FLAGS_PDF) test.md
-
-test2: mkdir
-	$(PANDOC) -o $(OUTPUT)/test2.pdf $(FLAGS) $(FLAGS_PDF) test2.md
+#pdf: mkdir
+#	$(PANDOC) -o $(OUTPUT)/$(PDF) $(FLAGS) $(FLAGS_PDF) $(FILES)
 
 mkdir:
 	@if [ ! -e build ]; then mkdir build; fi
@@ -49,6 +44,12 @@ tex: mkdir
 
 tex2pdf: mkdir
 	$(PANDOC) -o $(OUTPUT)/$(PDF) $(FLAGS_TEX) $(FLAGS_PDF) $(OUTPUT)/bnisly3-analysis.tex
+
+%.pdf : %.md | mkdir
+	$(PANDOC) -o $(OUTPUT)/$@ $(FLAGS) $(FLAGS_PDF) metadata.yaml $<
+
+%.tex : %.md | mkdir
+	$(PANDOC) -o $(OUTPUT)/$@ $(FLAGS_TEX) $(FLAGS_PDF) metadata.yaml $<
 
 view: open
 
