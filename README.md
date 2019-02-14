@@ -1,5 +1,6 @@
 # ieee_paper_markdown_pandoc
 Example project of an academic paper using the IEEE template. I did my work on MacOS. Your OS may need other requirements.
+This includes a workaround for the latex package `longtable` (required by the IEEE template) not supporting 2 column output.
 
 # TeX Environment
 0. Install homebrew (https://brew.sh/)
@@ -9,15 +10,16 @@ Example project of an academic paper using the IEEE template. I did my work on M
 2. `brew install pandoc pandoc-crossref`
 
 # Python Environment
-I used python 3.6. I did not try 2.7. Here are instructions on setting up your environment based on conda:
+I used python 3.6. I did not try 2.7. Here are instructions on setting up your environment based on anaconda:
 
+0. Install anaconda: `brew cask reinstall anaconda`
 1. `conda create --name pandoc python=3.6 -y`
 2. `source activate pandoc`
 3. `pip install -r requirements.txt`
 
 # Development Environment
 If you haven't installed the Apple developer tools, you may need to do that (for make).
-Or you can try to installing it via homebrew.
+Or you can try installing it via homebrew (`brew install make`).
 You'll want to ensure the following are in /usr/local/bin (or otherwise modify the makefile accordingly):
 
 * pandoc
@@ -26,8 +28,9 @@ You'll want to ensure the following are in /usr/local/bin (or otherwise modify t
 * pandoc-citeproc
 
 # Ready, set, go
-`make` will create 2 pdf files in the `build` directory.
-Those pdfs are also in the `pdf`sample` directory for your convenience.
+Executing `make` will create 2 pdf files in the `build` directory.
+
+Those pdfs are also in the `pdf-sample` directory for your convenience.
 
 # Thanks
 To Daniel Graziotin whose repo I forked: https://github.com/dgraziotin/acm_sig_paper_markdown_pandoc
