@@ -12,7 +12,7 @@ This includes a workaround for the latex package `longtable` (required by the IE
 # Python Environment
 I used python 3.6. I did not try 2.7. Here are instructions on setting up your environment based on anaconda:
 
-0. Install anaconda: `brew cask reinstall anaconda`
+0. Install anaconda: `brew cask install anaconda`
 1. `conda create --name pandoc python=3.6 -y`
 2. `source activate pandoc`
 3. `pip install -r requirements.txt`
