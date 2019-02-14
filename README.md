@@ -4,7 +4,7 @@ Example project of an academic paper using the IEEE template. I did my work on M
 # TeX Environment
 0. Install homebrew (https://brew.sh/)
 
-Install MacTeX:
+## Install MacTeX:
 1. `brew cask install mactex`
 2. `brew install pandoc pandoc-crossref`
 
@@ -27,7 +27,7 @@ You'll want to ensure the following are in /usr/local/bin (or otherwise modify t
 
 # Ready, set, go
 `make` will create 2 pdf files in the `build` directory.
-Those pdfs are also in the main directory for your convenience.
+Those pdfs are also in the `pdf`sample` directory for your convenience.
 
 # Thanks
 To Daniel Graziotin whose repo I forked: https://github.com/dgraziotin/acm_sig_paper_markdown_pandoc
