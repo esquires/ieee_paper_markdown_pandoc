@@ -1,12 +1,12 @@
 # Totalus Leviosa
 
-\IEEEPARstart{L}{orem} ipsum Finite expecto sectumsempra wingardium
+\IEEEPARstart{L}{orem} ipsum finite expecto sectumsempra wingardium
 alohomora. Lacarnum aparecium finite lacarnum. Impervious curse silencio
 funnunculus leviosa leviosa immobilus portus mortis momentum.
 
 Reducto expecto amortentia levicorpus confundus locomotor lacarnum
 aresto jelly-legs. Alohomora ennervate leviosa finite sleekeazys.dolor
-sit amet, consectetur adipiscing
+sit amet, consectetur adipiscing.
 
 # Silencio Protego
 
@@ -54,7 +54,7 @@ Mobilicorpus|Rictusempra|Veritaserum
 $\pi$       | 1 in 5    |Stupefy
 \$          | 4 in 5    |Quietus nox
 
-: Funnunculus reducio \label{tbl:my_table}
+: Funnunculus reducio {#tbl:my_table}
 
 ## Wingardium Aresto Petrificus
 
