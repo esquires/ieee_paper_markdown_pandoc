@@ -10,9 +10,9 @@ This includes a workaround for the latex package `longtable` (required by the IE
 2. `brew install pandoc pandoc-crossref`
 
 # Python Environment
-I used python 3.6. I did not try 2.7. Here are instructions on setting up your environment based on anaconda:
+I used python 3.6. I did not try 2.7. Here are instructions on setting up your environment based on miniconda:
 
-0. Install anaconda: `brew cask install anaconda`
+0. Install miniconda: `brew cask install miniconda`
 1. `conda create --name pandoc python=3.6 -y`
 2. `source activate pandoc`
 3. `pip install -r requirements.txt`
