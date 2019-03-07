@@ -14,7 +14,7 @@ I used python 3.6. I did not try 2.7. Here are instructions on setting up your e
 
 0. Install miniconda: `brew cask install miniconda`
 1. `conda create --name pandoc python=3.6 -y`
-2. `source activate pandoc`
+2. `conda activate pandoc`
 3. `pip install -r requirements.txt`
 
 # Development Environment
