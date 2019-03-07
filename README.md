@@ -7,7 +7,7 @@ This includes a workaround for the latex package `longtable` (required by the IE
 
 ## Install MacTeX:
 1. `brew cask install mactex`
-2. `brew install pandoc pandoc-crossref`
+2. `brew install pandoc pandoc-crossref pandoc-citeproc`
 
 # Python Environment
 I used python 3.6. I did not try 2.7. Here are instructions on setting up your environment based on miniconda:
@@ -23,8 +23,8 @@ Or you can try installing it via homebrew (`brew install make`).
 You'll want to ensure the following are in /usr/local/bin (or otherwise modify the makefile accordingly):
 
 * pandoc
-* pandoc-crossref
 * pdflatex
+* pandoc-crossref
 * pandoc-citeproc
 
 # Ready, set, go
