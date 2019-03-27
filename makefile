@@ -1,4 +1,4 @@
-PANDOC = /usr/local/bin/pandoc
+PANDOC = time /usr/local/bin/pandoc
 OUTPUT = build
 
 FLAGS = \
@@ -11,7 +11,7 @@ FLAGS = \
 	--csl=bibliography.csl \
 	-s
 
-FLAGS_TEX =
+FLAGS_TEX = \
 	--bibliography=bibliography.bib \
 	--csl=bibliography.csl \
 	-s \
