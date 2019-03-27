@@ -39,13 +39,12 @@ Those pdfs are also in the `pdf-sample` directory for your convenience.
 # Autobuild Your Documents
 0. `brew install fswatch`
 
-I've also included a script that will watch for files being modified and
-run the makefile. Just run the `watch.sh` script (which needs `fswatch`)
-in a different terminal window and then edit your document files. If you
-use the [Skim app](https://skim-app.sourceforge.io) as your PDF reader,
-it will pick up the changes to the PDF automatically. If you use
-Preview, you'll have to switch to another app and then switch back to
-see the changes.
+Run `make watch` in a different terminal window to have `fswatch` watch
+your files and automatically build them as you edit them.  If you use
+the [Skim app](https://skim-app.sourceforge.io) as your PDF reader, it
+will pick up the changes to the PDF automatically. If you use Preview,
+you'll have to switch to another app and then switch back to see the
+changes.
 
 # Thanks
 To Daniel Graziotin whose repo I forked:

@@ -30,5 +30,12 @@ mkdir:
 %.tex : %.md | mkdir
 	$(PANDOC) -o $(OUTPUT)/$@ $(FLAGS_TEX) $(FLAGS_PDF) metadata.yaml $<
 
+test:
+	make all
+	make test1.tex test2.tex
+
+watch:
+	fswatch -o *.md *.png *.bib *.csl *.yaml *.py *.latex makefile | xargs -n1 -I{} make all
+
 clean:
 	rm -f build/*
