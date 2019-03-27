@@ -9,7 +9,7 @@ template) not supporting 2 column output.
 
 ## Install MacTeX:
 1. `brew cask install mactex`
-2. `brew install pandoc pandoc-crossref`
+2. `brew install pandoc pandoc-crossref pandoc-citeproc`
 
 # Python Environment
 I used python 3.6. I did not try 2.7. Here are instructions on setting
@@ -17,7 +17,7 @@ up your environment based on miniconda:
 
 0. Install miniconda: `brew cask install miniconda`
 1. `conda create --name pandoc python=3.6 -y`
-2. `source activate pandoc`
+2. `conda activate pandoc`
 3. `pip install -r requirements.txt`
 
 # Development Environment
@@ -27,8 +27,8 @@ install make`). You'll want to ensure the following are in
 /usr/local/bin (or otherwise modify the makefile accordingly):
 
 * pandoc
-* pandoc-crossref
 * pdflatex
+* pandoc-crossref
 * pandoc-citeproc
 
 # Ready, set, go
